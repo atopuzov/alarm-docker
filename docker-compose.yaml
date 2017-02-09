@@ -1,0 +1,9 @@
+version: "2"
+services:
+  alarm:
+    build: ./build
+    volumes:
+      - ./root:/root
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
